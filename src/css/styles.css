@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,6 +15,15 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+img {
+  display: block;
+  border-radius: 0px;
+  max-width: 100%;
+  
+
+  object-fit: cover;
+  object-position: center;
+}
 
 #search-box {
   font: inherit;
@@ -18,3 +31,50 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.title{
+  display: flex;
+  align-items: center;
+}
+.country-item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.country_list-name{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(18 / 24);
+  letter-spacing: 0.03em;
+  }
+
+.country-name{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: 20px;
+}
+.country-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+.country-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18) ;
+}
+/* <div class="title">
+    <li class="country-item">
+    <img src="${flags.svg}" alt="${name.official}" width = "40px" height = "40px">
+    <p class="country-name">${name.official}</p>
+    </div>
+    <p class="country-txt"><span class="country-title">capital: </span>${capital}</p>
+    <p class="country-txt"><span class="country-title">population: </span>${population}</p>
+    <p class="country-txt"><span class="country-title">languages: </span>${Object.values(languages)}</p>
+  </li>`}).join('')
+  countryList.insertAdjacentHTML('beforeend',list)
+  } */
